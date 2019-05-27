@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <title>BlockBlister</title>
 </head>
 <body>
   <div id="navbar">
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">BlockBlister</a>
+      <a class="navbar-brand" href="#"><i class="fas fa-play"></i> BlockBlister</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -19,15 +20,31 @@
             <a id="navbar-button-auth" class="nav-link">Authentication</a>
           </li>
           <li class="nav-item">
+            <a id="navbar-button-popular" class="nav-link hide">Popular</a>
+          </li>
+          <li class="nav-item">
             <a id="navbar-button-movies" class="nav-link hide">Movies</a>
           </li>
+          <li class="nav-item">
+            <a id="navbar-button-stars" class="nav-link hide">Stars</a>
+          </li>
+          <div class="input-group hide"  id="search-box-nav">
+            <input class="form-control py-2 rounded-pill mr-1 pr-5  bg-dark text-light" type="search" placeholder="search">
+            <span class="input-group-append">
+                <button class="btn rounded-pill border-0 ml-n5" type="button">
+                      <i class="fa fa-search"></i>
+                </button>
+            </span>
+        </div>
           <li class="nav-item">
             <a id="navbar-button-logout" class="nav-link hide">Logout</a>
           </li>
         </ul>
       </div>
     </nav>
+    <div id="user"></div>
   </div>
   <div id="auth" class="authDiv"></div>
+  <div id="movies" class="moviesDiv"></div>
 </body>
 </html>
