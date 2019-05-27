@@ -3,6 +3,7 @@ import 'firebase/auth';
 
 const authDiv = document.getElementById('auth');
 const moviesDiv = document.getElementById('movies');
+const footerDiv = document.getElementById('footer');
 const movieTitle = document.getElementById('movie-title');
 const authNavbar = document.getElementById('navbar-button-auth');
 const searchNavbar = document.getElementById('search-box-nav');
@@ -17,6 +18,7 @@ const checkLoginStatus = () => {
     if (user) {
       authDiv.classList.add('hide');
       moviesDiv.classList.remove('hide');
+      footerDiv.classList.remove('hide');
       movieTitle.classList.remove('hide');
       authNavbar.classList.add('hide');
       accountNavbar.classList.remove('hide');
@@ -27,6 +29,7 @@ const checkLoginStatus = () => {
     } else {
       authDiv.classList.remove('hide');
       moviesDiv.classList.add('hide');
+      footerDiv.classList.add('hide');
       movieTitle.classList.add('hide');
       authNavbar.classList.remove('hide');
       accountNavbar.classList.add('hide');
