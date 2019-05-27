@@ -5,7 +5,7 @@ BlockBlister is an app that uses Firebase, Webpack, and JavaScript. A user is ab
 # Screenshots
 ![screenshot](https://github.com/jeressia/BlockBlister/blob/master/assets/auth.png?raw=true)
 
-![screenshot](https://github.com/jeressia/BlockBlister/blob/master/assets/blockblister.png?raw=true)
+![screenshot](https://github.com/jeressia/BlockBlister/blob/master/assets/view.png?raw=true)
 
 # Author
 Jeressia Williamson
