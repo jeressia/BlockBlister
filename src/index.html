@@ -36,9 +36,17 @@
                 </button>
               </span>
         </div>
-          <li class="nav-item">
-            <a id="navbar-button-logout" class="nav-link hide">Logout</a>
-          </li>
+        <li class="nav-item dropdown hide" id="account-button-logout">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Account
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">My Rated</a>
+            <a class="dropdown-item" href="#">Watchlist</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" id="navbar-button-logout">Logout</a>
+          </div>
+        </li>
         </ul>
       </div>
     </nav>
