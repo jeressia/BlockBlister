@@ -3,7 +3,11 @@ import 'firebase/auth';
 
 const authDiv = document.getElementById('auth');
 const authNavbar = document.getElementById('navbar-button-auth');
+const searchNavbar = document.getElementById('search-box-nav');
 const logoutNavbar = document.getElementById('navbar-button-logout');
+const moviesNavbar = document.getElementById('navbar-button-movies');
+const starsNavbar = document.getElementById('navbar-button-stars');
+const popularNavbar = document.getElementById('navbar-button-popular');
 
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
@@ -11,10 +15,18 @@ const checkLoginStatus = () => {
       authDiv.classList.add('hide');
       authNavbar.classList.add('hide');
       logoutNavbar.classList.remove('hide');
+      searchNavbar.classList.remove('hide');
+      moviesNavbar.classList.remove('hide');
+      starsNavbar.classList.remove('hide');
+      popularNavbar.classList.remove('hide');
     } else {
       authDiv.classList.remove('hide');
       authNavbar.classList.remove('hide');
       logoutNavbar.classList.add('hide');
+      searchNavbar.classList.add('hide');
+      moviesNavbar.classList.add('hide');
+      starsNavbar.classList.add('hide');
+      popularNavbar.classList.add('hide');
     }
   });
 };
