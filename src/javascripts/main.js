@@ -1,3 +1,5 @@
+import 'bootstrap/dist/js/bootstrap.bundle';
+
 import firebase from 'firebase/app';
 
 import auth from './components/auth/auth';

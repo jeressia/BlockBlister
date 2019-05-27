@@ -6,7 +6,7 @@ const moviesDiv = document.getElementById('movies');
 const movieTitle = document.getElementById('movie-title');
 const authNavbar = document.getElementById('navbar-button-auth');
 const searchNavbar = document.getElementById('search-box-nav');
-const logoutNavbar = document.getElementById('navbar-button-logout');
+const accountNavbar = document.getElementById('account-button-logout');
 const moviesNavbar = document.getElementById('navbar-button-movies');
 const starsNavbar = document.getElementById('navbar-button-stars');
 const popularNavbar = document.getElementById('navbar-button-popular');
@@ -19,7 +19,7 @@ const checkLoginStatus = () => {
       moviesDiv.classList.remove('hide');
       movieTitle.classList.remove('hide');
       authNavbar.classList.add('hide');
-      logoutNavbar.classList.remove('hide');
+      accountNavbar.classList.remove('hide');
       searchNavbar.classList.remove('hide');
       moviesNavbar.classList.remove('hide');
       starsNavbar.classList.remove('hide');
@@ -29,7 +29,7 @@ const checkLoginStatus = () => {
       moviesDiv.classList.add('hide');
       movieTitle.classList.add('hide');
       authNavbar.classList.remove('hide');
-      logoutNavbar.classList.add('hide');
+      accountNavbar.classList.add('hide');
       searchNavbar.classList.add('hide');
       moviesNavbar.classList.add('hide');
       starsNavbar.classList.add('hide');
