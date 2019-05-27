@@ -4,6 +4,8 @@ import auth from './components/auth/auth';
 
 import myNavbar from './components/myNavbar/myNavbar';
 
+import movies from './components/movies/movies';
+
 import authData from './helpers/data/authData';
 
 import apiKeys from './helpers/apiKeys.json';
@@ -15,6 +17,7 @@ const init = () => {
   myNavbar.navbarEvents();
   authData.checkLoginStatus();
   auth.authBuilder();
+  movies.initializeMovies();
 };
 
 init();

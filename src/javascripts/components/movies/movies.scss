@@ -1,0 +1,58 @@
+#movies{
+ display: flex;
+ flex-wrap: wrap;
+ text-align: left;
+ justify-content: center;
+ color: white;
+}
+
+#movie-title{
+display: block;
+margin-left: 35px;
+margin-top: 10px;
+margin-bottom: 30px;
+font-family: 'Montserrat', sans-serif;
+}
+
+.locationText{
+font-size: 10px;
+line-height: 8px;
+}
+
+.card-header{
+  display: block;
+}
+
+.movie {
+  margin: 10px;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card-img-top{
+  height: 429px;
+}
+
+.wrapper{
+  position: relative;
+}
+
+.card{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+.rating-card-top{
+position: absolute;
+  top: 0;
+  left: 30;
+  z-index: 1;
+  background-color: rgb(150, 54, 240);
+  border-radius: 50px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+
+}
