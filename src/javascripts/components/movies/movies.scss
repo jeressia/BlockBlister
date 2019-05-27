@@ -1,4 +1,4 @@
-#movies{
+.moviesDiv{
  display: flex;
  flex-wrap: wrap;
  text-align: left;
@@ -6,7 +6,7 @@
  color: white;
 }
 
-#movie-title{
+.movietitle{
 display: block;
 margin-left: 35px;
 margin-top: 10px;
