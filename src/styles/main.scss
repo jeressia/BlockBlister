@@ -1,5 +1,26 @@
 @import "~bootstrap/scss/bootstrap";
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@import '../styles/responsive.scss';
+@import '../javascripts/components/myNavbar/myNavbar.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+ }
+ 
 body {
-  background-color: blue;
+  background-image: url('../../assets/bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.hide {
+  display: none;
+}
+
+a:hover{
+  cursor: pointer;
 }
