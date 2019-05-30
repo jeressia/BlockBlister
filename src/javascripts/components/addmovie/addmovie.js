@@ -28,6 +28,8 @@ const createNewMovie = (e) => {
       document.getElementById('imageURL').value = '';
       movieDiv.classList.remove('hide');
       newMovieDiv.classList.add('hide');
+      document.getElementById('hideTitle').classList.add('hide');
+      document.getElementById('add-movie-btn').classList.remove('hide');
     })
     .catch(err => console.error('no new friends', err));
   console.error(newMovie);
