@@ -1,0 +1,9 @@
+{
+	"userMovies": [{
+			"id": "userMovie1",
+			"uid": "",
+			"movieId": "movie1",
+			"isWatched": "Yes",
+			"rating": "3"
+    }]
+}

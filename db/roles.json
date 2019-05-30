@@ -1,0 +1,14 @@
+{
+  "roles": [{
+			"id": "type1",
+	    "type": "actor"
+    },
+    {
+    	"id": "type2",
+	    "type": "actress"
+    },
+    {
+      "id": "type2",
+	    "type": "director"
+		}]
+}
