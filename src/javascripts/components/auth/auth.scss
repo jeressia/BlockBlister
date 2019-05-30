@@ -4,7 +4,11 @@
   justify-content: center;
   margin: 0 auto;
   border-radius: 5px;
-  margin-top: 15px;
+  margin-top: 50px;
+  border: .5px solid rgba(255, 255, 255, 0.288);
+  max-width: 400px;
+  padding: 25px;
+  background-color: rgba(240, 248, 255, 0.119);
 }
 
 .log-title {
@@ -12,13 +16,10 @@
   font-weight: bold;
 }
 
-#google-auth {
-  border: none;
-  background-color: transparent;
-}
-
 .button {
+  display: block;
   transform: scale(.5);
+  align-content: center;
 }
 .button:hover {
   transform: scale(.55);

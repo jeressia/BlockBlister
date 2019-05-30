@@ -1,5 +1,5 @@
 {
-	"movies": [{
+"movies": [{
 			"id": "movie1",
 			"name": "The Conjuring",
 			"genre": "Thriller",
@@ -13,7 +13,7 @@
 				"location9"
 			]
 		},
-		{
+	 {
 			"id": "movie2",
 			"name": "Moonlight",
 			"genre": "Drama",
@@ -123,6 +123,5 @@
 				"location8",
 				"location9"
 			]
-		}
-	]
+}]
 }

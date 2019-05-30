@@ -1,3 +1,8 @@
+#addme{
+display: flex;
+justify-content: center;
+margin-bottom: 15px;
+}
 .moviesDiv{
  display: flex;
  flex-wrap: wrap;
@@ -34,6 +39,7 @@ line-height: 8px;
 
 .card-img-top{
   height: 429px;
+  object-fit: cover;
 }
 
 .wrapper{
