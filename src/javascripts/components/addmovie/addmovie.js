@@ -30,6 +30,7 @@ const createNewMovie = (e) => {
       newMovieDiv.classList.add('hide');
       document.getElementById('hideTitle').classList.add('hide');
       document.getElementById('add-movie-btn').classList.remove('hide');
+      window.location.reload();
     })
     .catch(err => console.error('no new friends', err));
   console.error(newMovie);
@@ -42,12 +43,19 @@ const newMovieButton = () => {
   newMovieDiv.classList.remove('hide');
   document.getElementById('saveNewMovie').addEventListener('click', createNewMovie);
 };
+const cancelMovieButton = () => {
+  movieDiv.classList.remove('hide');
+  newMovieDiv.classList.add('hide');
+  document.getElementById('hideTitle').classList.add('hide');
+  document.getElementById('add-movie-btn').classList.remove('hide');
+};
 
 const showMovies = () => {
   let domString = '<h2 id="hideTitle" class="hide">Add New Movie</h2>';
   domString += '<button id="add-movie-btn" class="btn btn-info">Add Movie</button>';
   util.printToDom('addme', domString);
   document.getElementById('add-movie-btn').addEventListener('click', newMovieButton);
+  document.getElementById('cancel-movie-btn').addEventListener('click', cancelMovieButton);
 };
 
 export default { showMovies };

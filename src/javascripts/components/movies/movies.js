@@ -3,37 +3,22 @@ import util from '../../helpers/util';
 
 import './movies.scss';
 
-// let movies = [];
-
-// const domStringBuilder = () => {
-//   let domString = '';
-//   movies.forEach((movie) => {
-//     domString += '<div class="wrapper">';
-//     domString += `<div class="rating-card-top">RATED: ${movie.filmRating}</div>`;
-//     domString += `<div id="${movie.id}" class="card movie" style="width: 18rem;">`;
-//     domString += `<img class="card-img-top" src=${movie.imageURL} alt="${movie.name}">`;
-//     domString += '</div>';
-//     domString += '</div>';
-//   });
-//   util.printToDom('movies', domString);
-// };
-
 const initializeMovies = () => {
   moviesData.getMoviesData()
     .then((resp) => {
       const moviesResults = resp.data.movies;
-      // movies = moviesResults;
-      // domStringBuilder();
       const movieValues = Object.values(moviesResults);
       let domString = '';
-      movieValues.forEach((movie) => {
-        domString += '<div class="wrapper">';
-        domString += `<div class="rating-card-top">RATED: ${movie.filmRating}</div>`;
-        domString += `<div id="${movie.id}" class="card movie" style="width: 18rem;">`;
-        domString += `<img class="card-img-top" src=${movie.imageURL} alt="${movie.name}">`;
+      for (let i = 0; i < movieValues.length; i += 1) {
+        domString += '<div class="wrapper" id="wrapper">';
+        domString += `<div class="rating-card-top">RATED: ${movieValues[i].filmRating}</div>`;
+        domString += `<div id="${movieValues[i].id}" class="card movie" style="width: 18rem;">`;
+        domString += `<img class="card-img-top" src=${movieValues[i].imageURL} alt="${movieValues[i].name} id="movie-photo>`;
+        domString += '<button class="btn btn-info rate-btn">Rate This Movie</button>';
+        domString += '<button class="btn btn-dark text-light watch-btn">Add To Watchlist</button>';
         domString += '</div>';
         domString += '</div>';
-      });
+      }
       util.printToDom('movies', domString);
     })
     .catch(err => console.error(err));

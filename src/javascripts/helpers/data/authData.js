@@ -5,6 +5,7 @@ import movies from '../../components/addmovie/addmovie';
 
 const authDiv = document.getElementById('auth');
 const moviesDiv = document.getElementById('movies');
+const addMovieDiv = document.getElementById('addme');
 const footerDiv = document.getElementById('footer');
 const movieTitle = document.getElementById('movie-title');
 const authNavbar = document.getElementById('navbar-button-auth');
@@ -32,6 +33,7 @@ const checkLoginStatus = () => {
     } else {
       authDiv.classList.remove('hide');
       moviesDiv.classList.add('hide');
+      addMovieDiv.classList.add('hide');
       footerDiv.classList.add('hide');
       movieTitle.classList.add('hide');
       authNavbar.classList.remove('hide');
