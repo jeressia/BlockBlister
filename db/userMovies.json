@@ -3,7 +3,7 @@
 			"id": "userMovie1",
 			"uid": "",
 			"movieId": "movie1",
-			"isWatched": "Yes",
+			"isWatched": true,
 			"rating": "3"
     }]
 }

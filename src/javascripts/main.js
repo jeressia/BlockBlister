@@ -7,7 +7,7 @@ import auth from './components/auth/auth';
 import myNavbar from './components/myNavbar/myNavbar';
 
 import movies from './components/movies/movies';
-
+import singleMovie from './components/singlemovie/singlemovie';
 import authData from './helpers/data/authData';
 
 import apiKeys from './helpers/apiKeys.json';
@@ -20,6 +20,7 @@ const init = () => {
   authData.checkLoginStatus();
   auth.authBuilder();
   movies.initializeMovies();
+  singleMovie.singleMovieSelected();
 };
 
 init();
