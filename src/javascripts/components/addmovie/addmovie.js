@@ -12,11 +12,11 @@ const createNewMovie = (e) => {
   const newMovie = {
     title: document.getElementById('title').value,
     genre: document.getElementById('genre').value,
-    id: firebase.auth().currentUser.uid,
     filmRating: document.getElementById('filmRating').value,
     releaseYear: document.getElementById('rYear').value,
     description: document.getElementById('description').value,
     imageURL: document.getElementById('imageURL').value,
+    uid: firebase.auth().currentUser.uid,
   };
   addmovieData.addNewMovie(newMovie)
     .then(() => {

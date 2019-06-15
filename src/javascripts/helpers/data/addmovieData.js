@@ -6,8 +6,8 @@ const firebaseUrl = apiKeys.firebaseKeys.databaseURL;
 
 const addNewMovie = movieObject => axios.post(`${firebaseUrl}/movies/movies.json`, movieObject);
 
-const getMoviesByUid = () => new Promise((resolve, reject) => {
-  axios.get(`${firebaseUrl}/movies.json`)
+const getMoviesByUid = uid => new Promise((resolve, reject) => {
+  axios.get(`${firebaseUrl}/movies/movies.json?orderBy="uid"&equalTo="${uid}"`)
     .then((results) => {
       const movieResults = results.data;
       const movies = [];
@@ -20,5 +20,6 @@ const getMoviesByUid = () => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 
+const addToWatchlist = movieObject => axios.post(`${firebaseUrl}/userMovies/userMovies.json`, movieObject);
 
-export default { addNewMovie, getMoviesByUid };
+export default { addNewMovie, getMoviesByUid, addToWatchlist };
